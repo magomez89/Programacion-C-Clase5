@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 
 	// CONFIGURACION de socket. Descriptor entero server, &serv configuracion tipo sockaddr_in y tamaño
-	// FALTA TRATAMIENTO DE ERRORES. Igual que socket
+	// TRATAMIENTO DE ERRORES. Igual que socket
 	fallo_bind = bind(server, (struct sockaddr *)&serv, sizeof(struct sockaddr));
 	if (fallo_bind < 0)
 	{
